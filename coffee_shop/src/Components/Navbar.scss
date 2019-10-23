@@ -1,0 +1,41 @@
+.Navbar{
+    background: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 40px 0px 40px;
+
+    .Navbar-items{
+        display: flex;
+        flex-direction: row;
+
+        a{
+            color:black;
+            margin-right: 20px;
+
+            @media screen and (max-width: 641px) {
+                display: hidden;
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+.logo{
+    width: 30%
+}
+
+.showSideBt{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+
+    img{
+        height: 2rem;
+    }
+
+    @media screen and (min-width: 640px) {
+        display: hidden;
+        visibility: hidden;
+    }
+}
