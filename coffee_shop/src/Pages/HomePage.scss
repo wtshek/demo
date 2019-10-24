@@ -1,0 +1,83 @@
+.introduction{
+    position: absolute;
+    top: 50%;
+    padding: 100px;
+    background-image: url('../photos/asfalt-light.png');
+    font-size: 1.3rem;
+
+    @media screen and (min-width: 641px) {
+        top: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2rem;
+    }
+
+    &>div{
+        margin-bottom: 60px;
+        @media screen and (min-width: 641px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    .right, .left{
+        text-align: center;
+        @media screen and (min-width: 641px) {
+            align-self: center;
+            width: 50%;
+        }
+
+    }
+
+    .margin-left{
+        margin-left: 25px
+    }
+
+    .margin-right{
+        margin-right: 25px
+    }
+
+
+    img{
+        width: 85%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        @media screen and (min-width: 641px) {
+            width: 100%;
+        }
+    }
+
+    div:nth-child(3), div:nth-child(7){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .left{
+            order: 2;
+        }
+
+        .right{
+            order: 1
+        }
+
+        @media screen and (min-width: 641px) {
+            flex-direction: row;
+
+            .left{
+                order: 1;
+            }
+    
+            .right{
+                order: 2;
+            }
+        }
+
+    }
+
+    hr{
+        margin-bottom: 60px;
+        border-top: 1px dashed #8c8b8b;
+        border-bottom: 1px dashed #fff;
+    }
+}

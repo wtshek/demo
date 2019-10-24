@@ -11,9 +11,10 @@ const Navbar = () => {
 
     const itemsList = (items, handleClick) => {
         return items.map(item => {
+            const path = item === "Home" ? "" : item
             return(
                 <div onClick={handleClick}>
-                    <Link to={`/${item}`} key={item}>{item}</Link>
+                    <Link to={`/${path}`} key={item}>{item}</Link>
                 </div>
             )
         })
@@ -26,7 +27,7 @@ const Navbar = () => {
     return(
         <nav className="Navbar">
             <div className="logo">
-                <Link to={`/Home`}> Coffee Shop</Link>
+                <Link to={`/`}> Coffee Shop</Link>
             </div>
             <div className="Navbar-separator" />
             <div className="Navbar-items">

@@ -1,7 +1,8 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./Components/Navbar";
+import HomePage from "./Pages/HomePages"
 import './App.css';
 
 // TODOS: find photos
@@ -14,6 +15,10 @@ const App = () => {
     <div className="App">
       <Router>
         <Navbar />
+      
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+        </Switch>
 
       </Router>
     </div>
