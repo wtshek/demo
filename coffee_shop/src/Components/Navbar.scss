@@ -4,6 +4,9 @@
     width: 100%;
     justify-content: space-between;
     padding: 20px 40px 0px 40px;
+    position: absolute;
+    top:0;
+    z-index: 1;
 
     .Navbar-items{
         display: flex;
@@ -13,7 +16,7 @@
             color:black;
             margin-right: 20px;
 
-            @media screen and (max-width: 641px) {
+            @media screen and (max-width: 736px) {
                 display: hidden;
                 visibility: hidden;
             }
@@ -22,7 +25,11 @@
 }
 
 .logo{
-    width: 30%
+    width: 30%;
+
+    *{
+        color: black
+    }
 }
 
 .showSideBt{
@@ -34,7 +41,7 @@
         height: 2rem;
     }
 
-    @media screen and (min-width: 640px) {
+    @media screen and (min-width: 736px) {
         display: hidden;
         visibility: hidden;
     }

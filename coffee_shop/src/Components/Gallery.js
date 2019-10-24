@@ -1,5 +1,5 @@
 import React, {useRef, createRef, useEffect} from 'react';
-import {TimelineMax} from "gsap";
+
 import "./Gallery.scss"
 
 import coffeeTgt from "../photos/coffeeTgt.jpg"
@@ -18,7 +18,8 @@ const Gallery = () => {
             slideIndex++;
             if(slideIndex > imgRefs.current.length-1) {slideIndex = 0}
             imgRefs.current[slideIndex].current.style.display="block";
-            setTimeout(slideShow, 2000)
+        const timeout = setTimeout(()=>{slideShow()}, 2000)
+        clearTimeout(timeout)
         }
         slideShow()
     })

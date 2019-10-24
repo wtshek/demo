@@ -8,13 +8,9 @@ import dogs from "../photos/dogs.jpg"
 import shops_envir2 from "../photos/shops_envir2.jpg"
 import music from "../photos/music.jpg"
 
-//Component: dynamic gallary
-// coffee
-// food
-// enivronment
-// music
-// animal friendly
 const HomePage = () =>{
+
+
     return(
         <div>
             <Gallery />

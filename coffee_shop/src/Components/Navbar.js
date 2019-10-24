@@ -6,12 +6,24 @@ import menuIcon from "../icons/icons8-menu.svg"
 
 
 const Navbar = () => {
-    const btList = ["Home", "Menu", "Booking", "Karrier", "Contact Us"]
+    const btList = ["Home", "Menu", "Booking", "Career", "Contact Us"]
     const [isHidden, setIsHidden] = useState(true)
 
     const itemsList = (items, handleClick) => {
         return items.map(item => {
-            const path = item === "Home" ? "" : item
+            let path;
+            switch (item) {
+                case "Home":
+                    path = "";
+                    break
+
+                case "Contact Us":
+                    path = "ContactUs";
+                    break 
+
+                default:
+                    path = item
+            }
             return(
                 <div onClick={handleClick}>
                     <Link to={`/${path}`} key={item}>{item}</Link>

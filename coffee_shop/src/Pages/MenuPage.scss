@@ -1,0 +1,89 @@
+.Menu{
+    width: 100%;
+    padding: 80px 100px;
+
+    @media screen and (max-width: 736px) {
+        padding: 80px 40px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+
+    &>div{
+        margin-bottom: 60px;
+    }
+
+    .items{
+        list-style: none;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &>div{
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: end;
+            
+            .dotLine{
+                height: 1px;
+                width: 50%;
+                border: #a16f52 2px dotted;
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+.parallex{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 170px;
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#coffee{
+    background-image: url("../photos/latte.jpg");
+}
+
+#cakeNbread{
+    background-image: url("../photos/cupcakes.jpg");
+}
+
+#othersDrink{
+    background-image: url("../photos/otherdrinks.jpg");
+}
+
+.menu_dailySpecial{
+    background-image: url("../photos/paper.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    height: 250px;
+    border-radius: 10px;
+    display: flex;
+
+    @media screen and (max-width: 736px) {
+        width: 80%;
+        margin: 60px auto;
+    }
+
+    #message{
+        margin: auto auto;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+}
