@@ -17,7 +17,7 @@ const Footer = () => {
                 <Link to="/Menu"><div>Menu</div></Link>
                 <Link to="/Booking"><div>Booking</div></Link>
                 <Link to="/Karrier"><div>Karrier</div></Link>
-                <Link to="/ContactUs"> <div>Contact Us</div></Link>
+                <Link to="/FindUs"> <div>Find Us</div></Link>
             </section>
         </div>
     )

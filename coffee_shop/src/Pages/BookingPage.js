@@ -42,8 +42,21 @@ const BookingPage = () => {
                       locale="en"
                     />
                 </div>
+                <div>Time:</div>
+                <select>
+                    <option>09:00 - 10:00</option>
+                    <option>10:00 - 11:00</option>
+                    <option>11:00 - 12:00</option>
+                    <option>12:00 - 13:00</option>
+                    <option>13:00 - 14:00</option>
+                    <option>14:00 - 15:00</option>
+                    <option>16:00 - 17:00</option>
+                    <option>17:00 - 18:00</option>
+                    <option>18:00 - 19:00</option>
+                    <option>19:00 - 20:00</option>
+                </select>
                 <br/>
-                <button type="submit" id="submit_btn">Reserve a table</button>
+                <button type="submit" id="submit_btn">Find a table</button>
             </form>
         </div>
     )

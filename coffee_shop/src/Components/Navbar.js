@@ -6,7 +6,7 @@ import menuIcon from "../icons/icons8-menu.svg"
 
 
 const Navbar = () => {
-    const btList = ["Home", "Menu", "Booking", "Career", "Contact Us"]
+    const btList = ["Home", "Menu", "Booking", "Career", "Find Us"]
     const [isHidden, setIsHidden] = useState(true)
 
     const itemsList = (items, handleClick) => {
@@ -17,8 +17,8 @@ const Navbar = () => {
                     path = "";
                     break
 
-                case "Contact Us":
-                    path = "ContactUs";
+                case "Find Us":
+                    path = "FindUs";
                     break 
 
                 default:
