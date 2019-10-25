@@ -11,6 +11,7 @@ const Gallery = () => {
 
     useEffect(()=>{
         let slideIndex = 0;
+        let timer;
         const slideShow = () => {
             for (let i = 0; i<imgRefs.current.length; i++){
                 imgRefs.current[i].current.style.display = "none"
@@ -18,10 +19,12 @@ const Gallery = () => {
             slideIndex++;
             if(slideIndex > imgRefs.current.length-1) {slideIndex = 0}
             imgRefs.current[slideIndex].current.style.display="block";
-        const timeout = setTimeout(()=>{slideShow()}, 2000)
-        clearTimeout(timeout)
+            timer = setTimeout(()=>{slideShow()}, 2500)
         }
         slideShow()
+        return () => {
+            clearTimeout(timer)
+        }
     })
     return(
         <div className="Gallery">

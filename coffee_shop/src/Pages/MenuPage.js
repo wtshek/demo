@@ -1,6 +1,5 @@
 import React from 'react';
 import "./MenuPage.scss";
-import noticeBoard from "../photos//noticeBoard.png"
 
 //TODOS: Coffee, Drink, Food, Special
 

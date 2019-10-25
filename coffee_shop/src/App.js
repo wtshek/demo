@@ -5,11 +5,8 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer"
 import HomePage from "./Pages/HomePages"
 import MenuPage from "./Pages/MenuPage"
+import BookingPage from "./Pages/BookingPage"
 import './App.css';
-
-// TODOS: find photos
-// Component: Menu and Footer, Pages according to menu
-// rolling gallery, coffee, food, environment, music, animal_friendly
 
 
 const App = () => {
@@ -20,6 +17,7 @@ const App = () => {
         <Navbar />
         <Switch>
           <Route path="/Menu" component={MenuPage} />
+          <Route path="/Booking" component={BookingPage} />
           <Route exact path="/" component={HomePage} />
         </Switch>
         <Footer />
