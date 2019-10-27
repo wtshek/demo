@@ -1,0 +1,5 @@
+TODOS:
+1. Create the board
+2. Create different piece
+3. Prototype functions 
+4. Make the game flow

@@ -1,0 +1,4 @@
+arrow function and prototyping 
+"new" syntax in javascript
+
+kick in not enough if the tetr not far enough from the wall
