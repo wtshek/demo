@@ -1,0 +1,13 @@
+.toolbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    height: 6px;
+}
+
+.right-border{
+    display: flex;
+    margin-left: 10px;
+}

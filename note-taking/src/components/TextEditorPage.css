@@ -1,0 +1,23 @@
+.container{
+    border-top: 1px solid #DCDCDC;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.textArea{
+    margin-top: 30px;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    font-size: 13px;
+}
+
+
+.colorPicker{
+    z-index: 15;
+}
+
+
+
+
+
