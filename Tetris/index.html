@@ -6,9 +6,23 @@
     </head>
 
     <body>
-        <canvas id="myCanvas" width="200px" height="400px" style="border:1px solid #000000;">
-
-        </canvas>
+        <h1>Tetris</h1>
+        <div class="flexbox">
+            <div id="left">
+                <p>
+                    It is a normal tetris game. <br/> 
+                    Press ENTER to start the game <br/>
+                    Press arrow left, and the tetrominoes moves to the left, 
+                    right to the right, <br/> 
+                    and down to the down. <br/>
+                    Press up and the tetrominoes will rotate</p>
+            </div>
+            <div id="right">
+                <div >Score: <spn id="score">0</spn></div>
+                <canvas id="myCanvas" width="200px" height="400px" style="border:1px solid #000000;">
+                </canvas>
+            </div>
+        </div>
         <script type="text/javascript" src="./tetrominoes.js"></script>
         <script type="text/javascript" src="./script.js"></script>
     </body>

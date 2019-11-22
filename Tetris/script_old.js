@@ -252,3 +252,31 @@ window.onload = function(){
     console.log(board)
 }
 
+
+Piece.prototype.collision = function(x,y,piece){
+    for( r = 0; r < piece.length; r++){
+        for(c = 0; c < piece.length; c++){
+            // if the square is empty, we skip it
+            if(!piece[r][c]){
+                continue;
+            }
+            // coordinates of the piece after movement
+            let newX = this.x + c + x;
+            let newY = this.y + r + y;
+            
+            // conditions
+            if(newX < 0 || newX >= COL || newY >= ROW){
+                return true;
+            }
+            // skip newY < 0; board[-1] will crush our game
+            if(newY < 0){
+                continue;
+            }
+            // check if there is a locked piece alrady in place
+            if( board[newY][newX] != VACANT){
+                return true;
+            }
+        }
+    }
+    return false;
+}

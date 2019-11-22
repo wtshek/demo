@@ -6,6 +6,7 @@ const SQ = 20;
 let gameOver = false
 let dropStart = Date.now()
 let piece; //the moving piece
+let score = 0;
 
 const tetromonies = [
     [Z, "blue"],
@@ -17,12 +18,17 @@ const tetromonies = [
     [O, "purple"], // O is special
 ]
 
-window.onload = () => {
-    createBoard();
-    pieceGenerator();
-    drop()
-    document.addEventListener("keydown",CONTROL);
+const INIT = (e) => {
+    if(e.keyCode === 32){
+        createBoard();
+        pieceGenerator();
+        drop()
+        document.addEventListener("keydown",CONTROL);
+    }
 }
+
+window.onload = document.addEventListener("keydown", INIT)
+
 
 let board = []
 const createBoard = () => {
@@ -163,6 +169,9 @@ Piece.prototype.lock = function(){
             for(let c = 0; c < COL; c++){
                 board[0][c] = VACANT;
             }
+
+            score += 10;
+            document.getElementById("score").innerHTML = score;
         }
     }
     drawBoard()
