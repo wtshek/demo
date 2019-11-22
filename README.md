@@ -2,12 +2,12 @@
 
 This repos is for storing all of my personal project for demonstration and experiment.
 
-1. Coffee Shop
-this project is to create a responsive website using React and React-route. 
-The design is also done by myself. 
-demo website hosted on codesand box: https://lgwmm.csb.app/
-diffculties: designing a satisfying and neat website
-future improvement: add more interactive animation
+1. Coffee Shop \n
+this project is to create a responsive website using React and React-route. \n
+The design is also done by myself. \n
+demo website hosted on codesand box: https://lgwmm.csb.app/ \n
+diffculties: designing a satisfying and neat website \n
+future improvement: add more interactive animation \n
 
 2. Tetris
 this is a traditional game using canvas 
