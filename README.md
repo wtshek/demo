@@ -18,13 +18,14 @@ During testing others code, I even find some bug and able to improve my game
 Difficulties: Figure out how the game should behave and imagin different scenario  
 
 
-3. Note-taking App  
+3. Note App  
 Build by React and DraftJS with a drag and drop function. Inspired by OneNote  
 Difficulties: managing the focus of different textarea(Editor in Draftjs) with any conflict  
 Future Improvement: add file saving system   
   
   
-4. Note taking app (in development)  
+4. Note taking app (in development)
+https://github.com/shek119/noteApps
 build a note app with creating flash card function  
 aim at student and langauge learner, which is me  
 build my own backend and api. Has its own database (unlike note-taking app in 3)  
