@@ -24,8 +24,8 @@ Difficulties: managing the focus of different textarea(Editor in Draftjs) with a
 Future Improvement: add file saving system   
   
   
-4. Note taking app (in development)
-https://github.com/shek119/noteApps
+4. Note taking app (in development)  
+https://github.com/shek119/noteApps  
 build a note app with creating flash card function  
 aim at student and langauge learner, which is me  
 build my own backend and api. Has its own database (unlike note-taking app in 3)  
