@@ -32,6 +32,6 @@ build my own backend and api. Has its own database (unlike note-taking app in 3)
 
 
 5. Anikin (in development)
-A practise on animation, and css
-try to replicate the website: https://www.anakin.co/
+A practise on animation, and css  
+try to replicate the website: https://www.anakin.co/  
 Aim: create website with more css variation and animation
