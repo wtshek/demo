@@ -1,0 +1,21 @@
+<svg class="slice slice-1" viewBox="0 0 342 380">
+    <defs>
+        <linearGradient id="gradient" x1="-13.009%" x2="148.048%" y1="-1.637%" y2="107.83%">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFF46B" offset="38.52%"></stop>
+        </linearGradient>
+    </defs>
+    <polygon fill="url(https://www.anakin.co/#gradient)" points=".9 .4 280.4 379.4 341.9 258.6 152.5 1.7"></polygon>
+</svg>
+
+<svg class="slice slice-2" viewBox="0 0 342 380">
+    <polygon fill="url(https://www.anakin.co/#gradient)" points=".9 .4 280.4 379.4 341.9 258.6 152.5 1.7"></polygon>
+</svg>
+
+<svg class="slice slice-3" viewBox="0 0 342 380">
+    <polygon fill="url(https://www.anakin.co/#gradient)" points=".9 .4 280.4 379.4 341.9 258.6 152.5 1.7"></polygon>
+</svg>
+
+<svg class="slice slice-4" viewBox="0 0 342 380">
+    <polygon fill="url(https://www.anakin.co/#gradient)" points=".9 .4 280.4 379.4 341.9 258.6 152.5 1.7"></polygon>
+</svg>
