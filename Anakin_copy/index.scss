@@ -397,7 +397,44 @@ a{
         ". item3";
 }
 
+.footer{
+    position: relative;
+    margin: 80px auto;
+    width: 50%;
+    min-height: 100%;
+}
 
+.slice{
+    position: absolute;
+    width: 50%;
+}
+
+.slice-1{
+    top: 0;
+    right: 1.5%;
+}
+
+.slice-2{
+    top: 50px;
+    right: 19%;
+}
+
+.slice-3{
+    top: 100px;
+    right: 37%;
+}
+
+.slice-4{
+    top: 150px;
+    left: -5%;
+}
+
+.footer--logo-anakin{
+    position: absolute;
+    width: 25%;
+    top: 42%;
+    left: 36%;
+}
 
 // !important order
 .active{
