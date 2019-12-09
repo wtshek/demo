@@ -181,6 +181,8 @@ a{
 
 .nav_table{
     display: flex;
+    position: absolute;
+    top: 15%;
     
     button{
         margin-left: 10px;
@@ -192,6 +194,11 @@ a{
 
 .feature_works{
     margin-top: 45px
+}
+
+.feature_work--col-2{
+    position: relative;
+
 }
 
 #work::before{
@@ -400,8 +407,14 @@ a{
 .footer{
     position: relative;
     margin: 80px auto;
+}
+
+.footer--logo{
+    position: relative;
+    margin: 0 auto;
     width: 50%;
-    min-height: 100%;
+    z-index: 1;
+    padding-top: 47.46154%;
 }
 
 .slice{
@@ -429,12 +442,32 @@ a{
     left: -5%;
 }
 
-.footer--logo-anakin{
+.slice--logo{
     position: absolute;
     width: 25%;
-    top: 42%;
+    top: 22%;
     left: 36%;
 }
+
+.footer--nav{
+    position: absolute;
+    width: 50%;
+    bottom: 15%;
+    left: 24%;
+    z-index: 4;
+    
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    li{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+}
+
 
 // !important order
 .active{
