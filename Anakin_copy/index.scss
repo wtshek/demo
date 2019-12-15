@@ -1,12 +1,10 @@
 $cover-breakpt : 767px;
 
 html, body{
-    background: black;
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: #FFF;
     font: 13px/1.25 'Neuton', serif;
-    height: 100%;
     position: relative;
     overflow-x: hidden;
 }
@@ -33,7 +31,27 @@ a{
 .container{
     padding: 50px 40px 0;
     min-height: 100%;
-    
+}
+
+.case_studies::before{
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 50vw;
+    height: 10000px;
+    z-index: 3;
+    content: "";
+    background-color: #fff;
+}
+
+.case_studies::after{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 50vw;
+    height: 10000px;
+    z-index: 3;
+    content: "";
 }
 
 .wrap{
@@ -45,9 +63,19 @@ a{
     }
 }
 
+.animation--fade_in{
+    animation: fade-in 2s linear;
+}
+
+@keyframes fade-in{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .intro{
     position: relative;
     padding-top: 72.9%;
+    z-index: 4;
 
     .img_wrap{
         position: absolute;
@@ -86,8 +114,14 @@ a{
         position: absolute;
         bottom: 0;
         left: 50%;
+        width: 23.07%;
         transform: translateX(-50%);
-        width: 23.07%
+        animation: pop-up 2s linear
+    }
+
+    @keyframes pop-up {
+        from {zoom: 0}
+        to {zoom: 1}
     }
 
 
@@ -129,12 +163,11 @@ a{
 }
 
 .summary{
-    .logo{
-        width: 25%;
-    }
-
+    display: flex;
     .tagline{
         padding: 5.83333% 0 0 10.83333%;
+        z-index: 4;
+        width: 50%;
     
         h1{
             font-size: 40px;
@@ -160,6 +193,26 @@ a{
     }
 }
 
+.summary-column{
+    width: 50%;
+    position: relative;
+
+    img{
+        width: 25%;
+    }
+}
+
+.summary-column::after{
+    padding-top: 150%;
+    left: 0;
+    bottom: 0;
+    width: 115%;
+    z-index: 2;
+    content: "";
+    position: absolute;
+    box-shadow: 5px 31px 85px 23px rgba(0,0,0,.07);
+}
+
 .title{
     font-size: 3.8rem;
     margin-bottom: 10px;
@@ -183,12 +236,14 @@ a{
     display: flex;
     position: absolute;
     top: 15%;
+    padding-left: 10%;
     
     button{
         margin-left: 10px;
         width: 35px;
         height: 3px;
         background-color: #A9A9A9;
+        cursor: pointer;
     }
 }
 
@@ -198,7 +253,11 @@ a{
 
 .feature_work--col-2{
     position: relative;
+    z-index: 4;
+}
 
+.feature_work--details{
+    padding-left: 10%;
 }
 
 #work::before{
@@ -368,7 +427,6 @@ a{
 .feed--img-sm, .feed--img-lg{
     box-sizing: border-box;
     border: 15px solid;
-    border-color: attr(data-color)
 }
 
 
@@ -406,7 +464,7 @@ a{
 
 .footer{
     position: relative;
-    margin: 80px auto;
+    margin: 80px auto 0 auto;
 }
 
 .footer--logo{
@@ -414,7 +472,7 @@ a{
     margin: 0 auto;
     width: 50%;
     z-index: 1;
-    padding-top: 47.46154%;
+    padding-top: 42.46154%
 }
 
 .slice{

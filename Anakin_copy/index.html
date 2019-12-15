@@ -15,31 +15,36 @@
                     <img src="photos/cover_bt.jpg"
                          srcset="photos/cover_bt.jpg 937w, photos/cover_bt@2x.jpg 1874w"
                          sizes="723px"
+                         class="lazyloaded"
                     />
                 </div>
                 <div class="img_wrap intro_ct intro_shawdow">
                     <img src="photos/cover_center.jpg"
                          srcset="photos/cover_center.jpg 1078w, photos/cover_center@2x.jpg 2156w"
                          sizes="845px"
+                         class="lazyloaded"
                     />
                 </div>
                 <div class="img_wrap intro_tp intro_shawdow">
                     <img src="photos/cover_tp.jpg"
                          srcset="photos/cover_tp.jpg 238w, photos/cover_center@2x.jpg 476w"
                          sizes="180px"
+                         class="lazyloaded"
                     />
                 </div>
                 <div class="intro_name">
-                    <img src="svg/brand_name.svg">
+                    <img src="svg/brand_name.svg" class="animation--fade_in">
                 </div>
                 <div class="yellow_cross">
                     <img src="svg/yellow_cross.svg" alt="yellow_cross">
                 </div>
             </section>
             <div class="content">
-                <section class="summary col">
-                    <div class="logo">
-                        <img class="center" src="svg/anakin.svg" alt="anakin">
+                <section class="summary">
+                    <div class="summary-column">
+                        <div class="logo">
+                            <img class="center" src="svg/anakin.svg" alt="anakin">
+                        </div>
                     </div>
                     <div class="tagline">
                         <h1>
@@ -222,15 +227,15 @@
                 <section class="feed">
                     <div class="col">
                         <div class="feed--left-1">
-                            <div>
-                                <img src="photos/lit_cities.jpg" class="feed--img-sm" data-color="#000" alt="light cities">
+                            <div class="left-1--item-1">
+                                <img src="photos/lit_cities.jpg" class="feed--img-sm" style="border-color: #000" alt="light cities">
                                 <div class="feed--flex">
                                     <a href="/">WWW.LIT-CITIES.COM </a>
                                     <img src="svg/chat.svg" class="feed--icon" alt="speech bubbles">
                                 </div>
                             </div>
-                            <div>
-                                <img src="photos/video_cover.jpg" class="feed--img-sm" data-color="#262626" alt="video_cover">
+                            <div class="left-1--item-2">
+                                <img src="photos/video_cover.jpg" class="feed--img-sm" style="border-color: #262626" alt="video_cover">
                                 <div class="feed--flex">
                                     <a href="/">LIT CITIES // BOOK ILLUMINATES CITIES</a>
                                     <img src="svg/play-button.svg" class="feed--icon" alt="play button">
@@ -248,21 +253,21 @@
                     <div class="col">
                         <div class="feed--left-2">
                             <div class="left-2--item-1">
-                                <img src="photos/maloja.jpg" class="feed--img-sm" alt="maloja">
+                                <img src="photos/maloja.jpg" class="feed--img-sm" style="border-color: #ffd87d" alt="maloja">
                                 <div>
                                     <a href="/">WEBSTORE RE-DESIGN MALOJA / SPORTSCHRANK</a>
                                     <img src="svg/chat.svg" class="feed--icon" alt="speech bubbles">
                                 </div>
                             </div>
                             <div class="left-2--item-2">
-                                <img src="photos/word.png" class="feed--img-sm" alt="maloja">
+                                <img src="photos/word.png" class="feed--img-sm" style="border-color: #2b2b2b" alt="maloja">
                                 <div>
                                     <a href="/">CV MAGAZINE MEDIA INNOVATOR AWARDS 2019</a>
                                     <img src="svg/chat.svg" class="feed--icon" alt="speech bubbles">
                                 </div>
                             </div>
                             <div class="left-2--item-3">
-                                <img src="photos/wine.png" class="feed--img-sm" alt="wine">
+                                <img src="photos/wine.png" class="feed--img-sm" style="border-color: #7e8cb9" alt="wine">
                                 <div>
                                     <a href="/">WE ARE RECOGNIZED AS A TOP BEER LOGO DESIGN COMPANY ON DESIGNRUSH</a>
                                     <img src="svg/chat.svg" class="feed--icon" alt="speech bubbles">
@@ -270,7 +275,7 @@
                             </div>
                         </div>
                         <div class="feed--right-2">
-                            <img src="photos/women.jpg" class="feed--img-lg" alt="woman">
+                            <img src="photos/women.jpg" class="feed--img-lg" style="border-color: #ad5c30" alt="woman">
                             <a href="/">WEBSITE FOR THE TSG HOFFENHEIM INITIATED UMOJA PROJECT</a>
                         </div>
                     </div>
@@ -336,5 +341,11 @@
             </footer>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
