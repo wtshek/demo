@@ -7,13 +7,9 @@ const controller = new ScrollMagic.Controller()
 const rangeDetection = (ele, callback) => {
     const element = document.querySelectorAll(ele)[0].getBoundingClientRect()
     Yposition = element.top
-    console.log(ele,element)
     const Y1 = window.pageYOffset + Yposition
-    console.log(window.pageYOffset, Y1)
     if( window.pageYOffset >= Y1){
-        console.log("animation is about to be removed")
         callback();
-        console.log("animation is removed")
     }
 }
 
@@ -84,3 +80,57 @@ function initAnimation (){
 }
 
 initAnimation()
+
+const removeActive = (arr) => {
+    if(arr.classList.contains("active")){
+        arr.classList.remove("active")
+    }
+}
+
+const progressBarAnim = (ele) => {
+    const timeline = gsap.timeline()
+    const eleColor = ele.dataset.color
+    timeline.fromTo(ele, {width: "30%", backgroundColor: "black"}, {backgroundColor: eleColor, width: "100%", duration: 0.5})
+    timeline.fromTo(ele, {backgroundColor: eleColor, width: "100%"}, {width: "30%", backgroundColor: "black", duration: 0.3})
+}
+
+const opacityAnim = (ele) => {
+    gsap.fromTo(ele, {opacity:0}, {opacity:1, duration:1})
+}
+
+const feature_workOnClick = (ele) => {
+    const reg = /work--*/
+    const arr = ele.classList
+    const logoArr = document.querySelectorAll(".feature_work--logo");
+    const btArr = document.querySelectorAll(".feature_work--bt")
+    const detailsArr = document.querySelectorAll(".feature_work--detail")
+    const progressArr = document.querySelectorAll(".progress")
+
+    arr.forEach(i => {
+        if (i.match(reg)){
+            logoArr.forEach(logo=>{
+                removeActive(logo)
+                if (logo.classList.contains(i)){
+                    logo.classList.add("active")
+                    opacityAnim(logo)
+                }
+            })
+            btArr.forEach(bt=>{
+                removeActive(bt)
+                if (bt.classList.contains(i)){
+                    bt.classList.add("active")
+                }
+            })
+            detailsArr.forEach(detail=>{
+                removeActive(detail)
+                if (detail.classList.contains(i)){
+                    detail.classList.add("active")
+                }
+            })
+            progressArr.forEach(bar=>{
+                progressBarAnim(bar)
+            })
+        }
+    })
+
+}

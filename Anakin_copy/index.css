@@ -18,6 +18,10 @@ a {
   color: black;
 }
 
+button {
+  cursor: pointer;
+}
+
 .bt_no_style {
   outline: none;
   border: none;
@@ -48,6 +52,7 @@ a {
   height: 10000px;
   z-index: 3;
   content: "";
+  box-shadow: 5px 31px 85px 23px rgba(0, 0, 0, 0.07);
 }
 
 .wrap {
@@ -231,7 +236,6 @@ a {
   width: 35px;
   height: 3px;
   background-color: #A9A9A9;
-  cursor: pointer;
 }
 
 .feature_works {
@@ -241,6 +245,9 @@ a {
 .feature_work--col-2 {
   position: relative;
   z-index: 4;
+}
+.feature_work--col-2 nav .active {
+  background-color: #636363;
 }
 
 .feature_work--details {
@@ -256,7 +263,7 @@ a {
   margin-bottom: 10px;
 }
 
-.feature_work--logo, .detail {
+.feature_work--logo, .feature_work--detail {
   display: none;
 }
 
@@ -382,9 +389,6 @@ a {
 .feed--left-1 div {
   height: 50%;
 }
-.feed--left-1 * {
-  font-weight: 900;
-}
 
 .feed--icon {
   width: 10%;
@@ -398,6 +402,7 @@ a {
 }
 .feed--flex a {
   width: 50%;
+  font-weight: 900;
 }
 
 .feed--img-sm, .feed--img-lg {
